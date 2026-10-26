@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>সোলার ক্যালকুলেশন</title>
+<meta name="theme-color" content="#0d2438">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest" id="mf">
+<link rel="icon" href="icon-192.png" id="fav">
+<link rel="apple-touch-icon" href="icon-192.png" id="ati">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- লগইন পেজ -->
+<div id="login" class="login" hidden></div>
+
+<!-- মূল অ্যাপ -->
+<div id="app" hidden>
+  <aside id="sb">
+    <div class="sbh"><b id="sbt">📊 নেভিগেশন</b><button id="sbhide" class="hide" title="সাইডবার লুকান">লুকান</button></div>
+    <nav id="nav"></nav>
+    <div id="sbr" class="sbr" title="টেনে চওড়া/সরু করুন"></div>
+  </aside>
+  <div id="bd" class="bd"></div>
+  <div class="mn">
+    <header>
+      <button id="mb" class="btn ic" title="সাইডবার দেখান/লুকান">☰</button>
+      <div id="av" class="av" title="ছবি বদলান"><img id="avi" alt=""><span class="pen">✎</span></div>
+      <input type="file" id="avf" accept="image/*" hidden>
+      <select id="hsel" class="hsel" title="প্রোফাইল বদলান"></select>
+      <h1 id="ttl">সোলার ক্যালকুলেশন</h1>
+      <div id="sync" class="pill" title="সিঙ্ক অবস্থা">…</div>
+    </header>
+    <main id="page"></main>
+  </div>
+</div>
+
+<!-- PDF/প্রিন্ট রিপোর্টের জন্য -->
+<div id="print"></div>
+
+<script src="lib.js"></script>
+<script src="core.js"></script>
+<script src="calc.js"></script>
+<script src="hybrid.js"></script>
+<script src="notes.js"></script>
+<script src="buy.js"></script>
+<script src="settings.js"></script>
+<script>window.addEventListener('DOMContentLoaded',function(){App.boot()})</script>
+</body>
+</html>
